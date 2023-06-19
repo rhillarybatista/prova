@@ -24,19 +24,41 @@ namespace prova
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nome = tbnome.Text;
+            string nom = tbnome.Text;
             string comp = tbcomp.Text;
-            MessageBox.Show(nome,comp);
-           
+            
+            MessageBox.Show(nom);
+            MessageBox.Show(comp);
             
 
-            
+
 
         }
 
         private void cbser_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+            if (cbser.SelectedIndex == 0) 
+            {
+                int formatacao = cbser.SelectedIndex;
+                int limpeza = cbser.SelectedIndex;
+                int troca = cbser.SelectedIndex;
+                if (formatacao == 100)
+                {
+                    formatacao = 100;
+                    MessageBox.Show(Convert.ToString(formatacao));
+                }
+                if (limpeza == 50)
+                {
+                    limpeza = 50;
+                    MessageBox.Show(Convert.ToString(limpeza));
+                }
+                if (troca == 200)
+                {
+                    troca = 200;
+                    MessageBox.Show(Convert.ToString(troca));
+                }
+
+            }
         }
     }
 }
