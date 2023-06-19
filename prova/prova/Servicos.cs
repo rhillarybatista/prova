@@ -27,6 +27,7 @@ namespace prova
             string nom = tbnome.Text;
             string comp = tbcomp.Text;
             
+           
             MessageBox.Show(nom);
             MessageBox.Show(comp);
             
